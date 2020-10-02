@@ -14,4 +14,6 @@ def bubble_sort(array)
 end
 
 my_array = [1, 34, 6, 3, 54, 345, 56]
+my_array_2 = ["hay", "hey", "hello", "wapp"]
 print bubble_sort(my_array)
+print bubble_sort(my_array_2)
