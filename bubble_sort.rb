@@ -10,20 +10,20 @@ def bubble_sort(array)
     end
     break if sorted == false
   end
-  array
+  p array
 end
 
-def bubble_sort_by
-  array = yield if block_given?
+def bubble_sort_by(array)
   repeats = (array.length - 1)
   loop do
     sorted = false
     repeats.times do |pos|
-      if (array[pos] <=> array[pos + 1]) == 1
+      if yield(array[pos], array[pos + 1]) >= 0
         array[pos], array[pos + 1] = array[pos + 1], array[pos]
         sorted = true
       end
     end
+    break if sorted == false
   end
   p array
 end
@@ -31,7 +31,9 @@ end
 my_array = [1, 34, 6, 3, 54, 345, 56]
 my_array_2 = ["hay", "hey", "hello", "wapp"]
 
-print bubble_sort(my_array)
-print bubble_sort(my_array_2)
+bubble_sort(my_array)
+bubble_sort(my_array_2)
 
-bubble_sort_by { %w{1 54 2 34 76 32 6} }
+bubble_sort_by(["hi","hello","hey", "asfddfas", "zaosidf", "b"]) do |left,right|
+  left.length - right.length
+end
