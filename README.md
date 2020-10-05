@@ -8,7 +8,7 @@ We did the project in pair programming.
 Ruby
 
 ## Live Demo
-[Live Demo Link](https://fanger53.github.io/bubble-sort/ "Live Demo")
+[Live Demo Link](https://repl.it/@davidleonardo53/bubblesort-method#main.rb)
 
 ## Authors
 
