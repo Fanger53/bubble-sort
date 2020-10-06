@@ -6,9 +6,20 @@ We did the project in pair programming.
 
 ## Built With
 Ruby
+Using Linters for Ruby.
+Using Bundler.
 
 ## Live Demo
 [Live Demo Link](https://repl.it/@davidleonardo53/bubblesort-method#main.rb)
+
+🛠 Getting Started
+To get a local copy up and running follow these simple example steps.
+
+Go to the main page of te repo.
+Press the "Code" button and get the repo link.
+Clone it using git.
+Open terminal on that folder.
+Run the next command: ´$ruby bubble-sort.rb´
 
 ## Authors
 
