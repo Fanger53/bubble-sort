@@ -10,7 +10,7 @@ def bubble_sort(array)
     end
     break if sorted == false
   end
-  p array
+  array
 end
 
 def bubble_sort_by(array)
@@ -25,14 +25,8 @@ def bubble_sort_by(array)
     end
     break if sorted == false
   end
-  p array
+  array
 end
-
-my_array = [1, 34, 6, 3, 54, 345, 56]
-my_array_s = %w[hay hey hello wapp]
-
-bubble_sort(my_array)
-bubble_sort(my_array_s)
 
 bubble_sort_by(%w[hi hello hey]) do |left, right|
   left.length - right.length
